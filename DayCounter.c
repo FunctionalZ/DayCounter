@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<windows.h>
 
 int main()
 {
@@ -6,6 +7,7 @@ int main()
     for(i = 1; i < 86400; i++)
     {
         printf("Seconds since you opened the application: ");
+        PlaySound("beep.wav", NULL, SND_ASYNC);
         printf("%d", i);
         printf("\n");
         sleep(1);
